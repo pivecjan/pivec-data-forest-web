@@ -23,3 +23,9 @@ module.exports = {
     }),
   ],
 };
+
+output: {
+  publicPath: './', // Add this line
+  path: path.resolve(__dirname, 'dist'),
+  filename: 'main.js',
+}
