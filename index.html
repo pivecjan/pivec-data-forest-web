@@ -3,23 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Forest</title>
-    <meta name="description" content="Data Forest Web Application" />
-    <meta name="author" content="Jan Pivec" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Jan Pivec - Data Engineer & Analyst</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <meta property="og:title" content="pivec-data-forest-web" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #34495e;
+        }
+
+        /* Section styles */
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        /* Skills section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Contact section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #2c3e50;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background: #2c3e50;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+        <header>
+            <h1>Jan Pivec</h1>
+            <p class="subtitle">Data Engineer & Data Analyst</p>
+        </header>
+
+        <section id="introduction">
+            <h2>About Me</h2>
+            <p>I'm a Data Engineer and Analyst with a passion for transforming raw data into meaningful insights. While I may not be a software engineer, I've mastered the art of building robust data pipelines and creating compelling visualizations that tell stories through data.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <h3>Gen Digital (formerly Avast)</h3>
+            <p>As a Data Engineer, I specialize in:</p>
+            <ul>
+                <li>Building and maintaining data pipelines</li>
+                <li>Creating comprehensive reports using Power BI</li>
+                <li>Working with Hive and SQL for data processing</li>
+                <li>Implementing YAML configurations for data workflows</li>
+                <li>Version control and collaboration using Git</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Data Pipeline Development</div>
+                <div class="skill-item">Power BI Reporting</div>
+                <div class="skill-item">Hive</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">YAML</div>
+                <div class="skill-item">Git</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/jan-pivec/" target="_blank">LinkedIn</a>
+                <a href="mailto:jan.pivec@example.com">Email</a>
+            </div>
+        </section>
+    </div>
   </body>
 </html>
