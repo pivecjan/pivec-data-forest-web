@@ -1,18 +1,25 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // Remove "--mode" flag from GitHub Actions
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/', // Critical for GitHub Pages routing
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'], // Handles CSS
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
 };
