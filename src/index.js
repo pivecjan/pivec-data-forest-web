@@ -1,6 +1,6 @@
 import './index.css';
 
-document.body.innerHTML = `
+document.getElementById('root').innerHTML = `
   <div class="container">
     <h1>Jan Pivec</h1>
     <p>Data Engineer & Analyst</p>
