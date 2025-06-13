@@ -4,10 +4,17 @@ import React from 'react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your App</h1>
-        <p className="text-xl text-muted-foreground">This is a simplified version of your app.</p>
+    <div style={{ 
+      minHeight: '100vh', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      backgroundColor: '#f0f0f0',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <div style={{ textAlign: 'center' }}>
+        <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Data Forest</h1>
+        <p style={{ fontSize: '1.2rem', color: '#666' }}>Welcome to Data Forest</p>
       </div>
     </div>
   );
